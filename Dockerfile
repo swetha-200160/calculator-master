@@ -14,4 +14,4 @@ COPY --from=build /app/target/*.jar app.jar
 RUN mkdir /app/logs
 
 EXPOSE 8080
-CMD ["java", "-cp", "app.jar", "com.houarizegai.calculator.Main"]
+CMD ["java", "-cp", "app.jar", "com.houarizegai.calculator.App"]
