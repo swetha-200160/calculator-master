@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  calculator-app:
+    build: .
+    container_name: calculator-java
+    ports:
+      - "9292:8080"
+    volumes:
+      - calculator-logs:/app/logs
+    networks:
+      - calculator-net
+    restart: unless-stopped
+
+volumes:
+  calculator-logs:
+
+networks:
+  calculator-net:
+    driver: bridge
+
