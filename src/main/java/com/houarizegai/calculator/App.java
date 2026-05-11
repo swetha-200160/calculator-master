@@ -1,6 +1,8 @@
+package com.houarizegai.calculator;
+
 public class App {
+
     public static void main(String[] args) {
-        // code
+        System.out.println("Calculator App Started");
     }
 }
-
